@@ -1,0 +1,927 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <title>Amazon</title>
+
+            <style>
+                *{
+                    margin: 0;
+                    font-family: arial;
+                    border: border-box;
+                    
+                    
+
+                }
+                .navbar{
+                    height: 60px;
+                    background-color: #0f1111;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    
+
+
+                }
+                .nav-logo{
+                    height: 50px;
+                    width: 100px;
+
+                }
+                .logo{
+                    background-image: url("https://rdwgroup.com/wp-content/uploads/2013/08/Amazon-800x450-1.jpg");
+                    height: 50px;
+                    width: 100%;
+                    background-size: cover;
+                }
+                .border:hover{
+                    border: 1.5px solid goldenrod;
+                }
+                /** box2**/
+                .add-first{
+                    color: #cccccc;
+                    font-size: .75rem;
+                    margin-left: 15px;
+
+                }
+                .add-sec{
+                    font-size: 1rem;
+                    margin-left: 4px;
+                }
+                .add-icon{
+                    display: flex;
+                    margin-left: 3px;
+                    align-items: center;
+                }
+
+                /**box3**/
+
+                .nav-search{
+                    display: flex;
+                    background-color: pink;
+                    width: 620px;
+                    height: 40px;
+                    border-radius: 4px;
+                    margin-left: 20px;
+                }
+                .search-select{
+                    background-color: #f3f3f3;
+                    width: 50px;
+                    text-align: center;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                    border: none;
+                }
+                .search-input{
+                    width: 100%;
+                    font-size: 1rem;
+                    border: none;
+                }
+                .search-icon{
+                    width: 45px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 1.2rem;
+                    background-color: #febd68;
+                    border-radius: 4px;
+                    color: #0f1111;
+                }
+                .nav-search:hover{
+                    border: 2px solid orange;
+
+                }
+
+                /** box4**/
+                span{
+                    font-size: 0.7rem;
+                    margin-left: 20px;
+                    margin-right: 20px;
+
+                }
+                .nav-sec{
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    
+                }
+                .nav-cart i{
+                    font-size: 30px;
+
+                }
+                .nav-cart{
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                }
+                .nav-cart:hover{
+                    border: 1.5px solid orange;
+                }
+
+                /** Panel**/
+                .panel{
+                    height: 40px;
+                    background-color: #222f3d;
+                    display: flex;
+                    color: white;
+                    align-items: center;
+                    justify-content: space-evenly;
+                }
+                .panel-ops p{
+                    display: inline;
+                    
+                    
+                }
+                .panel-ops{
+                    width: 70%;
+                    font-size: 0.85rem;
+                    justify-content: space-arounds;
+                
+
+                }
+                .panel-deals{
+                    font-size: 0.9rem;
+                    font-weight: 700;
+                    padding: px;
+                }
+                .panel-deals:hover{
+                    border: 2px solid orange;
+
+                }
+
+            
+            
+            
+                
+            
+                /** shop section**/
+            
+            
+                
+            
+
+                
+                
+                
+
+                .cosmec{
+                    width: 100%;
+                    height: 350px;
+                    background-image: url("https://c0.wallpaperflare.com/preview/835/84/849/flatlay-makeup-beauty-cosmetics.jpg");
+                
+                    background-size: cover;
+                    position:relative;
+                    margin-top: 0px;
+                    justify-content: center;
+                    align-items: center;
+            
+                    
+                }
+                .problem{
+                    position: absolute;
+                    margin-top: 80px;
+                    margin-left: 200px;
+                    color: goldenrod;
+                    animation: yash  5s ease-in 0.5s infinite ;
+                    
+
+                }
+                    @keyframes yash{
+                            0%{
+                                
+                                color: red;
+                                
+                            }
+                            25%{
+                                color: rgb(92, 92, 173);
+                            }
+                            50%{
+                                color: greenyellow;
+                            }
+                            75%{
+                                color: beige;
+                            }
+                            100%{
+                                
+                                color: goldenrod;
+                                
+                            }
+                        
+                    }
+
+                .shop-row-1{
+                    width: 100%;
+                    height: 400px;
+                    /*background: linear-gradient(to bottom, #3498db, #2ecc71);*/
+                    background-color: white;
+                    position: relative;
+                    display: flex;
+                    
+                }
+                .shop-box-1{
+                    position: absolute;
+                    margin-top: 25px;
+                    margin-left: 20px;
+                    width: 17%;
+                    height:350px;
+                    background-color:whitesmoke;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px #000;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .row-box-1{
+                    width:65% ;
+                    height: 250px;
+                    background-image: url('https://www.pngmart.com/files/15/Apple-iPhone-12-PNG-HD.png');
+                    background-size: cover;
+                    margin-left: 50px;   
+                }
+
+                /**shop box 2**/
+
+                .shop-box-2{
+                    position: absolute;
+                    margin-top: 25px;
+                    margin-left: 290px;
+                    width: 17%;
+                    height:350px;
+                    background-color:whitesmoke;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px #000;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    display: inline-block;
+                    
+
+                }
+                .shop-box-2-pic{
+                    width:65% ;
+                    height: 200px;
+                    background-image: url('https://tse2.mm.bing.net/th?id=OIP.8MtgRIqIamkryATRepmSOAHaLE&pid=Api&P=0&h=180');
+                    background-size: cover;
+                    border-radius: 3px;
+                    margin-left: 40px; 
+                    position: absolute;
+                    margin-top: 10px; 
+
+                }
+                .shop-box-2-par{
+                    margin-top: 250px;
+                }
+
+                /** SHOP BOX 3 **/
+                .shop-box-3{
+                    position: absolute;
+                    margin-top: 25px;
+                    margin-left: 40px;
+                    width: 17%;
+                    height:350px;
+                    background-color:whitesmoke;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px #000;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    display: inline-block;
+                    
+
+                }
+                .shop-box-3-pic{
+                    width:65% ;
+                    height: 200px;
+                    background-image: url('https://tse4.mm.bing.net/th?id=OIP.mbh9lB4xpfxC_qoody-jowHaHa&pid=Api&P=0&h=180');
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 3px;
+                    margin-left: 40px; 
+                    position: absolute;
+                    margin-top: 10px; 
+
+                }
+                .shop-box-3-par{
+                    margin-top: 250px;
+                    margin
+                }
+                /**Shop box 4 **/
+                .shop-box-4{
+                    position: absolute;
+                    margin-top: 25px;
+                    margin-left: 40px;
+                    width: 17%;
+                    height:350px;
+                    background-color:whitesmoke;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px #000;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    display: inline-block;
+                    
+
+                }
+                .shop-box-4-pic{
+                    width:65% ;
+                    height: 200px;
+                    background-image: url('https://pngimg.com/uploads/watches/watches_PNG9863.png');
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 3px;
+                    margin-left: 40px; 
+                    position: absolute;
+                    margin-top: 10px; 
+
+                }
+                .shop-box-4-par{
+                    margin-top: 250px;
+                    margin
+                }
+
+                /**Shop box 4 **/
+                .shop-box-5{
+                    position: absolute;
+                    margin-top: 25px;
+                    margin-left: 40px;
+                    width: 17%;
+                    height:350px;
+                    background-color:whitesmoke;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 10px #000;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    display: inline-block;
+                    
+
+                }
+                .shop-box-5-pic{
+                    width:65% ;
+                    height: 200px;
+                    background-image: url('https://purepng.com/public/uploads/medium/dumbbells-jvn.png');
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 3px;
+                    margin-left: 40px; 
+                    position: absolute;
+                    margin-top: 10px; 
+
+                }
+                .shop-box-5-par{
+                    margin-top: 250px;
+                    
+                }
+
+                /* row 1 ended*/
+                /** row 2 **/
+
+                .row_no_2{
+                    width: 100%;
+                    height: 350px;
+                    /*jbkjdfjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj**/
+                    background-color: white;
+                    position: relative;
+                    
+                }
+                .row_no_2_1{
+                    width: 97%;
+                    height: 50px;
+                    position: absolute;
+                    margin-top: 25px;
+                    background-color:transparent;
+                    border-top-right-radius: 5px;
+                    border-top-left-radius: 5px;
+                    margin-left: 20px;
+                    
+                }
+                .row_no_2_2{
+                    width: 97%;
+                    height: 250px;
+                    position: absolute;
+                    margin-top: 75px;
+                    background-color:transparent;
+                    border-bottom-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    margin-left: 20px;
+                    display: inline-flex;
+                }
+                .decor_1{
+                    height: 225px;
+                    width: 225px;
+                    background-image: url('https://tse2.mm.bing.net/th?id=OIP.h-hyyjqpSDOC7JMGtuvXngHaFj&pid=Api&P=0&h=180');
+                    margin-left: 30px;
+                    border-radius: 4px;
+                    background-size: cover;
+                }
+                .decor_2{
+                    height: 225px;
+                    width: 225px;
+                    background-image: url('https://tse4.mm.bing.net/th?id=OIP.YoeJjqZKNnGmQ_JtfjpsAwHaFj&pid=Api&P=0&h=180');
+                    margin-left: 30px;
+                    border-radius: 4px;
+                    background-size: cover;
+                }
+                .decor_3{
+                    height: 225px;
+                    width: 225px;
+                    background-image: url('https://i.etsystatic.com/21231599/r/il/c58a5e/2736178020/il_fullxfull.2736178020_2l52.jpg');
+                    margin-left: 30px;
+                    border-radius: 4px;
+                    background-size: cover;
+                }
+                .decor_4{
+                    height: 225px;
+                    width: 225px;
+                    background-image: url('https://tse1.mm.bing.net/th?id=OIP.qmHuRmHwzDcbrfAkphmbKwHaFj&pid=Api&P=0&h=180');
+                    margin-left: 30px;
+                    border-radius: 4px;
+                    background-size: cover;
+                }
+                .decor_5{
+                    height: 225px;
+                    width: 225px;
+                    background-image: url('https://tse1.mm.bing.net/th?id=OIP.irsU2GPqYgjMWvhtLcY7xgHaLH&pid=Api&P=0&h=180');
+                    margin-left: 30px;
+                    border-radius: 4px;
+                    background-size: cover;
+                }
+                .single_line_1{
+                    width: 100%;
+                    height: 30px;
+                    background-color: white;
+                    
+                }
+                .single_line_1_1{
+                    width: 95%;
+                    height: 1.5px;
+                    background-color: grey;
+                    margin: 30px;
+                    
+                }
+                .bottom_sign{
+                    width: 100%;
+                    height: 100px;
+                    background-color: white;
+                    text-align: center;
+                }
+                .second_single_line{
+                    width: 95%;
+                    height: 1.5px;
+                    background-color: grey;
+                    margin: 30px;
+                    
+
+                }
+                .single_line_2{
+                    width: 100%;
+                    height: 30px;
+                    background-color: white;
+                    
+                }
+                .back_to_top{
+                    width: 100%;
+                    height: 50px;
+                    background-color:#37475A;
+                    text-align: center;
+                    font-weight: bold;
+                    color: white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+            
+                }
+                .below_back{
+                    background-color:  #232F3E;
+                    height: 400px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .bottom_box_1{
+                    margin-top: 50px;
+                }
+                .bottom_box_2{
+                    margin-top: 50px;
+                }
+                .bottom_box_3{
+                    margin-top: 50px;
+                }
+                .bottom_box_4{
+                    margin-top: 50px;
+                }
+                .grey_line{
+                    width: 100%;
+                    height: 1px;
+                    background-color: grey;
+                    
+                }
+                .in-the_end{
+                    background-color:  #232F3E;
+                    height: 170px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-evenly;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+                .below_amazon_logo{
+                    width: 100px;
+                    height: 60px;
+                    background-image: url('https://cdn.logojoy.com/wp-content/uploads/20230629132639/current-logo-1024x576.png');
+                    background-size: contain,cover;
+        
+                }
+                .and_last{
+                    background-color: #131A22;
+                    width: 100%;
+                    height: 140px;
+                    display: flex;
+                    justify-content: space-evenly;
+                }
+                .and_last_1{
+                    margin-top: 50px;
+                    
+                }
+                .and_last_2{
+                    margin-top: 50px;
+                    
+                }
+                .and_last_3{
+                    margin-top: 50px;
+                    
+                }
+                .and_last_4{
+                    margin-top: 50px;
+                    
+                }
+                .the_end{
+                    background-color: #131A22;
+                    width: 100%;
+                    height: 70px;
+                    text-align: center;
+                    color: white;
+                    font-size: 12px;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+                
+                
+                
+                
+                
+            
+                
+            
+                
+            
+                
+            </style>
+            
+        </head>
+        <body>
+            <header>
+                <div class="navbar">
+                    <div class="nav-logo border">
+                        <div class="logo"></div>
+
+                    </div>
+                    <div class="nav-address border">
+                        <p class="add-first">Deliver to Chennai 600082</p>
+                        <div class="add-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p class="add-sec">India</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-search">
+                        <select style="width: 60px;" class="search-select">   
+                            <option style="text-align: left;">All</option>                
+                            <option style="text-align: left;">Mobiles</option>
+                            <option style="text-align: left;">Clothes</option>
+                            <option style="text-align: left;">Foot wear</option>
+                            <option style="text-align: left;">Lamps</option>
+                            <option style="text-align: left;">Laptops</option>
+                            
+                        </select>
+                        <input placeholder="Search Amazon" class="search-input">
+                        <div class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+
+                    <div style="margin-left: 20px;" class="nav-signin border">
+                        <p><span>Hello, Sign in</span></p>
+                        <p class="nav-sec">Account&Lists</p>
+
+                    </div>
+
+                    <div style="margin-left: 20px;" class="nav-return border">
+                        <p><span>Returns</span></p>
+                        <p class="nav-second">&Orders</p>
+
+                    </div>
+
+                    <div style="margin-left: 20px;" class="nav-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Cart
+                    </div>
+                </div>
+                <div class="panel">
+                    All
+                    <i class="fa-solid fa-bars"></i>
+            
+
+                <div class="panel-ops">
+                    <p style="margin-left: 15px;">Today's Deals</p>
+                    <p style="margin-left: 15px;">Customer Service</p>
+                    <p style="margin-left: 15px;">Registry</p>
+                    <p style="margin-left: 15px;">Gift Cards</p>
+                    <p style="margin-left: 15px;">Sell</p>
+                </div>
+
+                <div class="panel-deals">
+                    Shop deals in Electronics
+                </div>
+            </div>
+            </header>
+
+            <div class="cosmec">
+
+                <div class="problem">
+
+                    <p style="font-size: 30px;color: black;font-weight: bolder;">STARTING</p>
+                <p> <i style="font-size: 25px;color:black;" class="fa-solid fa-indian-rupee-sign"> 199</i></p><br>
+                    <p style="font-weight: bolder;font-size: 20px;">SHOP NOW</p>
+
+                </div>
+            </div>
+
+            
+                
+            
+
+                            <!--Clothing section-->
+
+
+                    <div class="shop-row-1">
+
+            <!--Box 1-->           
+        <div class="shop-box-1">
+            <div class="row-box-1"></div>
+            <div class="row-box-2">
+                <p style="color: grey;font-size: 13px;margin-left: 5px;">sponsored</p>
+                <p style="color: black;font-size: 17px;font-weight: bold;margin-left: 5px;">Apple iPhone 13 (128 GB) -</p>
+                <p style="color: black;font-size: 17px;font-weight: bold;margin-left: 5px;">Black</p>
+                <p style="color: rgb(126, 126, 212);margin-left: 5px; font-weight: bold;"> 3   <i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i> 22,088</p>
+                <p style="color: black;font-size: large;font-weight: bold;margin-left: 10px;"><i style="font-size: small;" class="fa-solid fa-indian-rupee-sign"></i> 75,000</p>
+
+
+            </div>
+            </div>
+
+            <!--Box 2-->
+
+            <div class="shop-box-2">
+                <div class="shop-box-2-pic"></div>
+                <div class="shop-box-2-par">
+                    <p style="color: grey;font-size: 13px;margin-left: 5px;">sponsored</p>
+                <p style="color: black;font-size: 17px;font-weight: bold;margin-left: 5px;">The Godfather</p>
+                <p style="color: rgb(126, 126, 212);font-size: 17px;font-weight: bold;margin-left: 5px;">Author : Mario Puzo</p>
+                <p style="color: rgb(126, 126, 212);margin-left: 5px; font-weight: bold;"> 4   <i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i> 13,255</p>
+                <p style="color: black;font-size: large;font-weight: bold;margin-left: 10px;"><i style="font-size: small;" class="fa-solid fa-indian-rupee-sign"></i> 3,999</p>
+
+                    
+
+                    
+
+
+                </div>
+            
+            
+            
+            
+            </div>
+
+            <!--Box 3-->
+
+            <div class="shop-box-3">
+                <div class="shop-box-3-pic"></div>
+                <div class="shop-box-3-par">
+                    <p style="color: grey;font-size: 13px;margin-left: 5px;">sponsored</p>
+                <p style="color: black;font-size: 17px;font-weight: bold;margin-left: 5px;">Denim Grey Shirt</p>
+                <p style="color: rgb(126, 126, 212);font-size: 17px;font-weight: bold;margin-left: 5px;">by Hugg the World</p>
+                <p style="color: rgb(126, 126, 212);margin-left: 5px; font-weight: bold;"> 4   <i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i> 42,279</p>
+                <p style="color: black;font-size: large;font-weight: bold;margin-left: 10px;"><i style="font-size: small;" class="fa-solid fa-indian-rupee-sign"></i> 1,500</p>
+
+
+                </div>
+
+            </div>
+            <!--Box 4-->
+            <div class="shop-box-4">
+                <div class="shop-box-4-pic"></div>
+                <div class="shop-box-4-par">
+                    <p style="color: grey;font-size: 13px;margin-left: 5px;">sponsored</p>
+                <p style="color: black;font-size: 17px;font-weight: bold;margin-left: 5px;">Casio Analog Men's Watch</p>
+                <p style="color: rgb(126, 126, 212);font-size: 17px;font-weight: bold;margin-left: 5px;">Visit the Casio Store</p>
+                <p style="color: rgb(126, 126, 212);margin-left: 5px; font-weight: bold;"> 3  <i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i> 12,742</p>
+                <p style="color: black;font-size: large;font-weight: bold;margin-left: 10px;"><i style="font-size: small;" class="fa-solid fa-indian-rupee-sign"></i> 5,247</p>
+
+
+                </div>
+
+            </div>
+            <!--Box 5-->
+            <div class="shop-box-5">
+                <div class="shop-box-5-pic"></div>
+                <div class="shop-box-5-par">
+                    <p style="color: grey;font-size: 13px;margin-left: 5px;">sponsored</p>
+                <p style="color: black;font-size: 17px;font-weight: bold;margin-left: 5px;">LEEWAY</p>
+                <p style="color: rgb(126, 126, 212);font-size: 13px;font-weight: bold;margin-left: 5px;">Dumbbell 5kg for exercise pack of 2</p>
+                <p style="color: rgb(126, 126, 212);margin-left: 5px; font-weight: bold;"> 3  <i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i><i style="color: gold;" class="fa-solid fa-star"></i> 60,015</p>
+                <p style="color: black;font-size: large;font-weight: bold;margin-left: 10px;"><i style="font-size: small;" class="fa-solid fa-indian-rupee-sign"></i> 2,992</p>
+
+
+                </div>
+
+            </div>
+        
+                        
+
+
+                        </div>
+                        <!--row 1 ended-->
+
+
+
+                        <div class="row_no_2">
+                            <div class="row_no_2_1">
+                                <p style="color: black;font-weight: 900;font-size: 20px;margin-left: 20px;margin-top: 10px;">Trendy Home Decor</p>
+                            </div>
+                            <div class="row_no_2_2">
+                                
+                                <div class="decor_1"></div>
+                                <div class="decor_2"></div>
+                                <div class="decor_3"></div>
+                                <div class="decor_4"></div>
+                                <div class="decor_5"></div>
+
+                            </div>
+
+                        </div>
+
+                        <!--SINGLE LINE 1-->
+
+                        <div class="single_line_1"></div>
+                        <div class="single_line_1_1"></div>
+
+                        <div class="bottom_sign">
+                            <p style="color: black;font-weight: bold;margin-top: 10px;">See Personalized Recommendations</p><br>
+                            <button style="width: 250px;background-color: gold;height: 250x;border-radius: 7px;cursor: pointer;padding: 10px;"><b>Sign in</b></button><br>
+                            <p style="color:black;font-weight: 300;padding-top: 20px;font-weight: bold;">New Customer ?</p>
+
+
+                        </div>
+
+                        <div class="second_single_line"></div>
+                        <div class="single_line_2"></div>
+
+                        <!--Start of Bottom Part-->
+
+                        <div class="back_to_top">Back to top</div>
+
+                        <div class="below_back">
+
+                            <div class="bottom_box_1">
+                                <p style="color: white;font-weight: bolder;font-size: 17px;">Get to Know Us</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">About Us</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Careers</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Press Releases</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Amazon Science</p>
+
+
+
+                            </div>
+                            <div class="bottom_box_2">
+                                <p style="color: white;font-weight: bolder;font-size: 17px;">Connect with US</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Facebook</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Twitter</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Instagram</p>
+                                
+
+
+
+
+                            </div>
+
+                            <div class="bottom_box_3">
+                                <p style="color: white;font-weight: bolder;font-size: 17px;">Make Money with US</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Sell on Amazon</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Sell under Amazon Accelerator</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Protext and Build Your Brand</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Amazon Global Selling</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Become an Affiliate</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Fulfilment by Amazon</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Advertise Your Products</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Amazon Pay on Merchants</p>
+                                
+
+                            </div>
+                            <div class="bottom_box_4">
+                                <p style="color: white;font-weight: bolder;font-size: 17px;">Let Us Help You</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Covid-19 and Amazon</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Your Account</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Returns Centre</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">100% Purchase Protection</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Amazon App Download</p>
+                                <p style="color: #DDDDDD;margin-top: 15px;margin-right: 15px;font-size: 14x;">Help</p>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <!--Grey Line-->
+                        <div class="grey_line"></div>
+
+                        <div class="in-the_end">
+
+
+                            <div class="below_amazon_logo">
+
+                            </div>
+                            
+                        </div>
+                        <!--and Last-->
+
+                        <div class="and_last">
+
+                            <div style="font-size: 12px;" class="and_last_1">
+                                <p style="color: white;font-weight: bolder;">Abe Books</p>
+                                <p style="color: #dddddd80;">Books, Arts</p>
+                                <p style="color: #dddddd80;">& Collectibles</p>
+                                
+
+
+                            </div>
+                            <div style="font-size: 12px;" class="and_last_2" >
+                                <p style="color: white;font-weight: bolder;">Amazon Web Services</p>
+                                <p style="color: #dddddd80;">Scalable Cloud</p>
+                                <p style="color: #dddddd80;">Computing Services</p>
+
+                            
+                            
+                            </div>
+                            <div style="font-size: 12px;" class="and_last_3" >
+                                <p style="color: white;font-weight: bolder;">Audible</p>
+                                <p style="color: #dddddd80;">Download</p>
+                                <p style="color: #dddddd80;">Audio Books</p>
+
+                            
+                            </div>
+                            <div style="font-size: 12px;" class="and_last_4">
+                                <p style="color: white;font-weight: bolder;">IMDb</p>
+                                <p style="color: #dddddd80;">Movies,TV</p>
+                                <p style="color: #dddddd80;">& Celebrities</p>
+
+
+
+                            </div>
+                        </div>
+
+                        <!--THe end-->
+                        
+                        <div class="the_end">
+                            <p>Conditions of Use & Sale    Privacy Notice    Interest-Based Ads</p>
+                            <p><i class="fa-thin fa-circle-check"></i> 1996-2023, Amazon.com, Inc. or its affiliates</p>
+                        
+                        </div>
+                
+
+
+                        
+                        
+
+
+                    
+
+            
+
+
+
+            
+
+
+
+
+
+            
+            
+            
+        </body>
+        </html>
